@@ -1,0 +1,260 @@
+.nav-item{
+    padding: 0px;
+}
+.navbar-nav {
+    margin: auto;
+}
+.navbar-nav .nav-link {
+    margin-right: 25px; /* Espaçamento entre os itens do menu */
+}
+
+.container-fluid i{
+    font-size: 25px;
+}
+
+
+
+
+/* MAIN */
+
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+.main-text img{
+    width: 15rem;
+    margin-bottom: 3vh;
+}
+.main-text h3{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.main-text p{
+    margin-bottom: 1.5rem;
+}
+.main-text h6{
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.main-text .btn{
+    padding: 10px 25px;
+    background: #0071e3;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+.main-text .btn:hover{
+    opacity: .85;
+}
+.main-text .text h5{
+    font-size: 1rem;
+    color: #444;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.main-text .content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main-text .content span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #888;
+    transition: all 0.5s;
+}
+.main-text .content span:hover{
+    opacity: .80;
+}
+#green{
+    background: #384937;
+}
+#pink{
+    background: #f8ddd6;
+}
+#blue{
+    background: #225f7e;
+}
+#black{
+    background: #192028;
+}
+#white{
+    background: #f7f2ee;
+}
+#red{
+    background: #ae0617;
+}
+.main-img{
+    transition: all 1s ease;
+    z-index: 100;
+}
+.main-img img{
+    width: 500px;
+    transform: rotate(-7deg);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #445c42;
+    clip-path: circle(800px at right 1000px);
+}
+
+/* OFERTAS */
+
+section.especialidades {
+    padding: 40px 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.especialidades .flex {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    flex: 1;
+    padding: 40px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box img {
+    font-size: 70px;
+    color: #007bff;
+}
+
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box p{
+    margin-left: 5%;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #007bff83;
+}
+
+.interface .titulo{
+    margin-left: 34%;
+    padding: 50px;
+}
+
+.interface span{
+    color: #0071e3;
+}
+
+
+.btnn {
+    background-color: #007bff; 
+    color: white; 
+    border: 2px solid #007bff; 
+    border-radius: 25px; 
+    padding: 5px 15px; 
+    margin: 15px;
+}
+
+
+
+/* MOTIVOS */
+
+section.motivos {
+    padding: 40px 4%;
+}
+
+section.motivos .flex {
+    display: flex; /* Alteração para flex */
+    gap: 60px;
+    justify-content: space-between; /* Distribui os cards uniformemente */
+}
+
+.motivos .motivos-box {
+    flex: 1; /* Para fazer os cards ocuparem o espaço disponível */
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.motivos .motivos-box i {
+    font-size: 70px;
+    color: #007bff;
+}
+
+.motivos .motivos-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.motivos .motivos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #007bff83;
+}
+
+.interface .tituloo{
+    margin-left: 21%;
+    padding: 50px;
+}
+
+
+/* FOOTER */
+
+.footer-icons .btn-link i {
+    color: black;
+}
+
+
+
+
+
+@media screen and (max-width: 940px) {
+    main section{
+      flex-direction: column-reverse;
+      padding: 3rem;
+    }
+    .main-text img{
+      width: 100%;
+      margin-bottom: 3vh;
+    }
+    .main-text h3{
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .main-text h6{
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .main-text .btn{
+      font-size: 1rem;
+    }
+    .main-img img{
+      width: 80%;
+      margin-top: 3rem;
+      transform: none;
+    }
+    .circle{
+        width: 0px;
+        height: 0px;
+    }
+    .flex{
+        flex-direction: column;
+        padding: 0px 4%;
+    }
+    .interface .tituloo{
+        margin-left: 1%;
+        padding: 50px;
+    }
+  }
